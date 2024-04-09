@@ -1,0 +1,81 @@
+<%- include('header.ejs') %>
+<head>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<section class="display-orders">
+
+   <% let cart_grand_total = 0; %>
+   <% if (locals.cartItems.length > 0) { %>
+      <% locals.cartItems.forEach(function(item) { %>
+         <% let cart_total_price = item.price * item.quantity; %>
+         <% cart_grand_total += cart_total_price; %>
+         <p><%= item.name %> <span>(<%= '₹' + item.price + '/- x ' + item.quantity %>)</span></p>
+      <% }); %>
+   <% } else { %>
+      <p class="empty">Your cart is empty!</p>
+   <% } %>
+
+   <div class="grand-total">Grand total : <span><%= cart_grand_total %>/-</span></div>
+</section>
+
+<section class="checkout-orders">
+   <form action="/placeorder" method="POST">
+
+      <h3>Place your order</h3>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>Your name :</span>
+            <input type="text" name="name" placeholder="Enter your name" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Your number :</span>
+            <input type="number" name="number" placeholder="Enter your number" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Your email :</span>
+            <input type="email" name="email" placeholder="Enter your email" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Payment method :</span>
+            <select name="method" class="box" required>
+               <option value="cash on delivery">Cash on delivery</option>
+               <option value="credit card">Credit card</option>
+               <option value="paytm">Paytm</option>
+               <option value="paypal">PayPal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Address line 01 :</span>
+            <input type="text" name="flat" placeholder="e.g. Flat number" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Address line 02 :</span>
+            <input type="text" name="street" placeholder="e.g. Street name" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>City :</span>
+            <input type="text" name="city" placeholder="e.g. Mumbai" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>State :</span>
+            <input type="text" name="state" placeholder="e.g. Maharashtra" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Country :</span>
+            <input type="text" name="country" placeholder="e.g. India" class="box" required>
+         </div>
+         <div class="inputBox">
+            <span>Pin code :</span>
+            <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" class="box" required>
+         </div>
+         <input type="hidden" name="total_products" value="<%=locals.cartItems.length%>">
+         <input type="hidden" name="total_price" value="<%=cart_grand_total%>">
+      </div>
+
+      <button type="submit" name="order" class="btn <%= (cart_grand_total > 1) ? '' : 'disabled' %>">Place order</button>
+
+   </form>
+</section>
+
+<%- include('footer.ejs') %>

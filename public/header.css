@@ -1,0 +1,89 @@
+#navbar{
+    padding: 1rem 1.5rem 0;
+    box-shadow:2px 2px 5px rgb(79, 192, 237);
+    background-color: rgb(230, 230, 231);
+}
+
+#navbar .navbar .nav-item{
+    padding:0 0.5rem;
+    font-size:1.2rem;
+    color:black;
+}
+
+#navbar .navbar .nav-item .nav-link:hover{
+    color:rgb(235, 1, 1);
+}
+
+
+#navbar .navbar .nav-item a i{
+    padding-top:5px;
+    text-decoration:none;
+    color:black;
+    font-size:1.5rem;
+}
+
+#navbar .navbar .nav-item a i:hover{
+    color:rgb(235, 1, 1);
+}
+
+#navbar .navbar .nav-item input{
+    border-color: lightgrey;
+    padding-bottom:5px;
+    border-radius: 3px;
+    background-color: rgb(236, 236, 236);
+}
+
+#navbar .navbar .navbar-brand{
+    font-size:2rem;
+    color:goldenrod;
+    font-family: 'Style Script', cursive;
+}
+
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-icon {
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+  .wishlist .heading{
+    margin:2rem 3rem;
+    font-size:4rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .cart .heading{
+    margin:2rem 3rem;
+    font-size:4rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }

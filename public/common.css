@@ -1,0 +1,36 @@
+.use_full_links{
+    font-size:1.25rem;
+    font-family: 'Times New Roman', Times, serif;    
+    padding:0 12rem;
+}
+
+.use_full_links .extra-heading{
+    font-size:4rem;
+    font-family: 'Style Script', cursive;
+    text-align:center;
+    padding:3rem 0;
+}
+
+.use_full_links .side-heading{
+    font-size:2rem;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration:underline;
+    margin:2rem 0 1rem;
+}
+
+.use_full_links .side-heading2{
+    font-size:1.8rem;
+    font-family:'Times New Roman', Times, serif;
+    margin:2rem 0 1rem;
+}
+
+.use_full_links .table .row{
+    padding:0 1rem;
+
+}
+
+.use_full_links .table{
+    margin-bottom:2rem;
+}
+
+

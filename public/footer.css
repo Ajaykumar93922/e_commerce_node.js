@@ -1,0 +1,59 @@
+#footer{
+    background-color: rgb(219, 246, 252);
+
+}
+
+#footer .container{
+    padding:1rem 0;
+}
+
+hr{
+    margin-top:2.5rem;
+    align-items: center;
+    text-decoration:dotted;
+}
+
+#footer .container .copy-right{
+    align-items: center;
+    text-align:center;
+} 
+
+#footer .container .fa-icon{
+    font-size:2rem;
+    padding:0 1rem;
+}
+
+#footer .container .link{
+    text-decoration:none;  
+    color:black; 
+}
+
+#footer .container .link:hover{
+    color:red;
+}
+
+#footer .container .link-heading{
+    font-size: 1.8rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+/* styling the place order portion in cart.ejs */
+
+
+.placeorder p{
+    margin:2rem 3rem;
+    font-size:3rem;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.placeorder .hidden_forms form button{
+    font-size:3rem;
+    size:6rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+

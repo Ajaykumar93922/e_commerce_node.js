@@ -1,0 +1,41 @@
+<%- include('header.ejs') %>
+
+<div class="products">
+  <div class="container">
+    <div class="shirts product-type">
+      <h1 class="heading">Shirts</h1>
+      <%if(locals.shirts){%>
+      <% for(let i=0;i<shirts.length;i++){%>
+      <div class="item">
+        <img src="/gallery/<%=shirts[i].image%>" alt="Image of shirt">
+        <div class="item-details">
+          <p class="name"><%=shirts[i].name%></p>
+          <div class="item-price row">
+            <p class="price col-3">₹<%=shirts[i].price%></p>
+            <p class="original-price col-3">₹<%=shirts[i].price+600%></p>
+          </div>
+        </div>
+        <div class="hidden_forms">
+          <form action="/addToWishlist" method="post">
+            <!-- Add your product ID input field inside the form -->
+            <input type="hidden" name="productId" value="<%=shirts[i].id%>">
+            <!-- Add other form fields if needed -->
+
+            <button type="submit" class="wishlist btn btn-primary btn-sm">Add to wishlist</button>
+          </form>
+
+          <form action="/addToCart" method="post">
+            <!-- Add your product ID input field inside the form -->
+            <input type="hidden" name="productId" value="<%=shirts[i].id%>">
+            <!-- Add other form fields if needed -->
+
+            <button type="submit" class="wishlist btn btn-success btn-sm">Add to cart</button>
+          </form>
+        </div>
+      </div>
+      <%}}%>
+    </div>
+  </div>
+</div>
+
+<%- include('footer.ejs') %>

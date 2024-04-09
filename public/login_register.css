@@ -1,0 +1,102 @@
+.box{
+    font-size:1.6rem;
+    position:relative;
+    font-family:'Times New Roman', Times, serif;
+    background-color:#e0f2f3;
+    box-shadow: inset 2px 5px 10px rgb(0 0 0 / 10%), inset -2px -5px 10px rgb(255 255 255), 15px 15px 10px rgb(0 0 0 / 5%), 15px 10px 15px rgb(0 0 0 / 3%);
+    margin:10px 0px;
+    border-radius:25px;
+    border-style:none;
+    padding:10px;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(224, 222, 222);
+}
+
+form h3{
+    font-family: 'Style Script', cursive;
+    font-size:rem;
+    margin-bottom:10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.form {
+    margin:0 auto;
+    width:45%;
+    background-color: #ebeaea;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgb(195, 219, 228);
+    border-radius:30% 20% 30% 20% / 10% 40% 10% 40%;
+    transition:.8s;
+}
+
+.form:hover{
+    border-radius:10px;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.btn {
+    background-color: rgb(253, 93, 93);
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin:10px 0;
+}
+
+.btn:hover{
+    background-color: #07c627;
+}
+
+p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Add this to your CSS file or in a <style> tag in your HTML */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  }
+  
+  .popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  

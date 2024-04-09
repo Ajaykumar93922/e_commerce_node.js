@@ -1,0 +1,89 @@
+.offers .carousel .carousel-inner .carousel-item img{
+    height: 80vh;
+    width:80vw;
+}
+
+.products .container{
+    margin:2rem 12rem;
+}
+
+.products .container .product-type{
+    margin:1rem 0;
+}
+
+.products .container .product-type img{
+    height:320px;
+    width:260px;
+    margin:5px 5px;
+    padding:5px 5px;
+    transition: transform 0.2s; 
+}
+ 
+.products .container .product-type img:hover {
+    transform: scale(1.05);
+    padding: 0; 
+}
+
+
+.products .container .product-type .item {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+    width: auto; 
+    display: inline-block; 
+    background-color: rgb(225, 225, 225);
+    margin:5px 0;
+  }
+
+.products .container .product-type .item .item-details{
+    padding:0 15px;
+  }
+
+.products .container .product-type .item .item-details .name{
+    font-size:1.5rem;
+  }
+  
+
+.products .container .product-type .item .original-price{
+    font-weight:normal;
+    text-decoration:line-through;
+}
+
+/* Add this CSS code in your stylesheet */
+
+/* Style for the container of each item */
+.item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Style for the hidden forms */
+  .hidden_forms {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  /* Style for the buttons in the hidden forms */
+  .hidden_forms button {
+    margin: 20px 30px 10px 10px;
+
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Hover effect for the buttons */
+  .hidden_forms button:hover {
+    transform: scale(1.1);
+  }
+
+  .placeorder   .hidden_forms button{
+    font-size:3rem;
+    size:6rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+
+  
